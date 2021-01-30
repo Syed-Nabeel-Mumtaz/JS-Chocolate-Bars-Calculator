@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task-chocolate-calculator.css">
+    <title>Chocolate Calculator Task</title>
+</head>
+
+<body>
+    <h1>Chocolate Calculator Task</h1>
+    <!-- Add a form which has… -->
+    <form id="form">
+        <div class="field">
+            <!-- …a labelled field for entering your chocolate budget like 0.50 or 4.99 -->
+            <label for="yourBudget">Enter Budget : </label>
+            <input class="input" id="yourBudgetInput" type="number" min="0" step="0.01" value="0" required autofocus>
+        </div>
+        <div class="field">
+            <!-- …a labelled field for entering the price of one chocolate bar. Use 0.39 as a default value. -->
+            <label for="price">Enter Price : </label>
+            <input class="input" id="priceInput" type="number" min="0" step="0.01" value="0.39" required autofocus>
+        </div>
+    <!-- …a submit button -->
+         <button>Press to Calculate</button>
+    </form>
+    <!-- Add a paragraph you can output results to -->
+    <p id="output"></p>
+    <!-- Add a link to the task-chocolate-calculator.js file -->
+    <script src="task-chocolate-calculator.js"></script>
+</body>
+
+</html>
